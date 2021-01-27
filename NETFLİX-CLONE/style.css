@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  letter-spacing: 1px;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-size: 16px;
+}
+.wrapper {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 110vh;
+  background: url(img/netflix.jpg);
+  background-size: cover;
+  position: relative;
+  border-bottom: 10px solid #222222;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 120px 100px 250px #000;
+}
+.nav {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 5vh;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.nav img {
+  width: 133px;
+  height: 36px;
+}
+.signup {
+  background-color: #e50914;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 2px;
+  letter-spacing: 2px;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 65%;
+  height: 400px;
+  z-index: 2;
+}
+.titledesc {
+  width: 70%;
+  text-align: center;
+  margin: 1rem auto;
+}
+.titledesc h1 {
+  font-size: 3.1em;
+  color: white;
+}
+.pdesc {
+  width: 70%;
+  margin: 1rem auto;
+}
+.pdesc h2 {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+.prop {
+  margin: 1rem auto;
+}
+.prop h3 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+.form {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  width: 60%;
+  height: 60px;
+  padding: 10px 30px;
+  border: none;
+  border-bottom: 4px solid #ffa00a;
+}
+.btn {
+  width: 40%;
+  height: 60px;
+  border: none;
+  background-color: #f40612;
+  font-size: 1.8em;
+  color: white;
+}
+.email-pargraf {
+  width: 90%;
+  height: 31px;
+  text-align: left;
+}
+.email-p {
+  color: #ffa00a;
+  font-size: 1.2em;
+}
+
+/*SECTON TV */
+.sectionTV {
+  width: 100%;
+  height: 473px;
+  background-color: #000000;
+  position: relative;
+  border-bottom: 10px solid #222222;
+}
+/*Container*/
+.containerREAL {
+  max-width: 95%;
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*Container*/
+
+.tv-desc {
+  width: 450px;
+  height: 204px;
+}
+.tv-title-h2 {
+  padding: 1em auto;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+.tv-paragraf {
+  font-size: 1.4em;
+  margin-top: 1em;
+  text-align: center;
+  color: white;
+}
+.tv-img {
+  background: url(img/tv.png);
+  width: 500px;
+  height: 380px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*mobil section*/
+.mobilsect {
+  width: 100%;
+  height: 473px;
+  background-color: #000000;
+  position: relative;
+  border-bottom: 10px solid #222222;
+}
+.imgcont {
+  width: 450px;
+  height: 380px;
+  position: relative;
+}
+.mobil-img {
+  background-image: url(img/mobile-0819.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mobil-decs {
+  width: 550px;
+  height: 202px;
+  text-align:center;
+}
+.mobil-h2 {
+  width: 100%;
+  height: 110px;
+  font-size: 2em;
+  margin-bottom: 1.3em;
+  color: white;
+}
+.mobil-p {
+  width: 100%;
+  font-size: 1.5em;
+  color: white;
+}
+/*set-place*/
+.sect-place {
+  width: 100%;
+  height: 473px;
+  background-color: #000000;
+  position: relative;
+  border-bottom: 10px solid #222222;
+}
+.place-desc {
+  width: 500px;
+  height: 235px;
+  text-align: center;
+}
+.title-place {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: white;
+}
+.place-paragraf {
+  font-size: 1.7em;
+  color: white;
+}
+.img-place-cont {
+  width: 550px;
+  height: 473px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.image-place {
+  width: 90%;
+  height: 400px;
+  background-size: contain;
+  margin: 0 auto;
+  background-image: url(img/device-pile.png);
+  background-repeat: no-repeat;
+}
+/*İnformation*/
+.information {
+  width: 100%;
+  min-height: 1000px;
+  background-color: #000000;
+  border-bottom: 10px solid #222222;
+  position: relative;
+}
+.info-cont {
+  width: 90%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.info-cont h1 {
+  font-size: 3.1em;
+  color: white;
+}
+.info-cont ul {
+  width: 815px;
+  height: auto;
+  margin: 2em auto;
+}
+ul .box {
+  width: 100%;
+  height: auto;
+  background-color: #303030;
+  margin-bottom: 8px;
+  position:relative;
+  text-align: left;
+}
+ul li .btndesc {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  width: 90%;
+  text-align: left;
+  height: 75.59px;
+  background-color: #303030;
+  padding: 0.8em 0.2em 0.8em 1.2em;
+  border: 0;
+}
+.box .btndesc::before{
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 1.5em;
+  transform: translateY(-50%);
+}
+.box.active .secretwindow{
+  height: auto;
+  padding: 20px;
+  border-top: 5px solid black;
+} 
+.box.active .btndesc::before{
+  content: "x";
+ }
+.secretwindow {
+  width: 100%;
+  color: white;
+  background-color: #303030;
+  text-align: center;
+  font-size: 1.5em;
+  position: relative;
+  height: 0;
+  transition: .1s linear;
+  overflow: hidden;
+}
+.secretwindow p{
+  padding: 10px;
+}
+.bottom-signup {
+  width: 80%;
+  margin: 2em auto;
+}
+.prop {
+  width: 100%;
+  font-size: 1.1em;
+  color: white;
+}
+.bottom-signup .form {
+  width: 90%;
+  font-size: 1.2em;
+}
+.bottom-signup .btn {
+  font-size: 1.5em;
+}
+/*Footer*/
+.footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: #000000;
+  display: flex;
+  color: #999999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footerCont {
+  max-width: 25%;
+  height: 90%;
+  color: #999999;
+  display: flex;
+  justify-content: center;
+}
+.footerCont ul {
+  margin-top: 1em;
+}
+.footerCont ul li {
+  width: 200px;
+  margin: 1em 0;
+  display: inline-block;
+  background-color: inherit;
+}
+.footer a {
+  margin-left: 0;
+  color: #999999;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+select {
+  width: 132px;
+  height: 53px;
+  margin: 2em 0;
+  border: 1px solid #999;
+  display: flex;
+  color: #999999;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Media Query*/
+
+@media (max-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+  .sectionTV {
+    width: 100%;
+    height: 650px;
+  }
+  .mobilsect {
+    width: 100%;
+    height: 650px;
+  }
+  .containerREAL {
+    width: 767px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  .mobil-decs {
+    width: 100%;
+  }
+  .tv-desc {
+    width: 100%;
+    height: 150px;
+  }
+  .place-desc {
+    width: 100%;
+    height: 150px;
+  }
+  .img-place-cont {
+    width: 100%;
+    height: 400px;
+  }
+  .sect-place {
+    height: 650px;
+  }
+  .info-cont ul {
+    width: 100%;
+    height: auto;
+  }
+
+  .footerCont ul {
+    width: 100%;
+
+  }
+  .footerCont ul li {
+    width: 150px;
+  }
+}
+@media (max-width:650px){
+ body{
+   font-size: 12px;
+ }
+  .header {
+    height: 120vh;
+  }
+
+  .image-place {
+    width: 70%;
+    height: 300px;
+  }
+  .footer {
+    width: 100%;
+    min-height: 500px;
+  }
+  .footerCont {
+    flex-wrap: wrap;
+  }
+  .desc {
+    width: 95%;
+    height: 550px;
+    padding-bottom: 1rem;
+  }
+  .imgcont {
+    width: 450px;
+    height: 200px;
+  }
+  .containerREAL {
+    width: 98%;
+    height: 500px;
+  }
+  .form {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .btn{
+    width: 80%;
+  }
+  .tv-desc {
+    width: 90%;
+    height: 220px;
+  }
+}
+@media (max-width:350px){
+  .tv-title-h2{
+    font-size: 1.8em;
+  }
+  .titledesc h1{
+    font-size: 2.5em;
+  }
+  .mobil-h2{
+    font-size: 1.8em;
+  }
+  .title-place{
+    font-size: 1.8em;
+  }
+  .containerREAL {
+    width: 98%;
+    height: 420px;
+  }
+}
