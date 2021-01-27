@@ -1,2 +1,2 @@
-# NETFL-X-Clone
+# NETFLIX  Clone
 HTML , CSS AND JAVASCRİPT 
